@@ -106,7 +106,7 @@ public class ListaUsuarios extends AppCompatActivity {
         mSocket.connect();
 
         // Definimos la interfaz gráfica referente a la lista de usuarios
-        llUserList = findViewById(R.id.llUserList);
+        llUserList = (ListView) findViewById(R.id.llUserList);
         usuarioAdapter = new UsuarioAdapter(getApplicationContext(), R.layout.row_user, usuariosArray);
 
         llUserList.setAdapter(usuarioAdapter);
